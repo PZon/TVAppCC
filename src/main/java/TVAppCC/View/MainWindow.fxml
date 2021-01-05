@@ -1,0 +1,254 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="700.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="TVAppCC.Controller.MainWindowController">
+    <children>
+        <ImageView fitHeight="700.0" fitWidth="1000.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@img/cloudsS.jpg" />
+            </image>
+        </ImageView>
+        <Pane fx:id="citiesWindow" prefHeight="100.0" prefWidth="1000.0">
+            <children>
+                <Label fx:id="cityOne" alignment="CENTER" layoutX="30.0" layoutY="13.0" minHeight="40.0" prefHeight="75.0" prefWidth="400.0" text="CityOne" textFill="#302256">
+                    <font>
+                        <Font name="System Bold" size="33.0" />
+                    </font>
+                </Label>
+                <Label fx:id="cityTwo" alignment="CENTER" layoutX="550.0" layoutY="13.0" minHeight="40.0" prefHeight="75.0" prefWidth="400.0" text="CityTwo" textFill="#302256">
+                    <font>
+                        <Font name="System Bold" size="33.0" />
+                    </font>
+                </Label>
+                <Label fx:id="today" alignment="CENTER" layoutX="400.0" layoutY="75.0" prefWidth="200.0" text="Today" textAlignment="CENTER" textFill="#1d4753">
+                    <font>
+                        <Font name="System Bold" size="20.0" />
+                    </font>
+                </Label>
+            </children>
+        </Pane>
+        <Pane fx:id="weatherWindow" layoutY="100.0" prefHeight="500.0" prefWidth="1000.0">
+            <children>
+                <ImageView fx:id="vericalLone" fitHeight="447.0" fitWidth="8.0" layoutX="498.0" layoutY="23.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@img/LineLong.png" />
+                    </image>
+                </ImageView>
+                <ImageView fx:id="imgOne" fitHeight="170.0" fitWidth="170.0" layoutX="55.0" layoutY="20.0" pickOnBounds="true" preserveRatio="true" />
+                <ImageView fx:id="imgTwo" fitHeight="170.0" fitWidth="170.0" layoutX="555.0" layoutY="20.0" pickOnBounds="true" preserveRatio="true" />
+                <Label fx:id="tempOne" alignment="CENTER" layoutX="10.0" layoutY="190.0" prefWidth="250.0" text="tempOne" textAlignment="CENTER" textFill="#28758e">
+                    <font>
+                        <Font name="System Bold" size="20.0" />
+                    </font>
+                </Label>
+                <Label fx:id="tempTwo" alignment="CENTER" layoutX="510.0" layoutY="190.0" prefWidth="250.0" text="tempTwo" textAlignment="CENTER" textFill="#28758e">
+                    <font>
+                        <Font name="System Bold" size="20.0" />
+                    </font>
+                </Label>
+                <Label layoutX="300.0" layoutY="30.0" text="Wind speed:" textFill="#302256">
+                    <font>
+                        <Font name="System Bold" size="13.0" />
+                    </font></Label>
+                <Label layoutX="300.0" layoutY="70.0" text="Cloudiness:" textFill="#302256">
+                    <font>
+                        <Font name="System Bold" size="13.0" />
+                    </font></Label>
+                <Label layoutX="300.0" layoutY="110.0" text="Pressure:" textFill="#302256">
+                    <font>
+                        <Font name="System Bold" size="13.0" />
+                    </font>
+                </Label>
+                <Label layoutX="300.0" layoutY="150.0" text="Humidity:" textFill="#302256">
+                    <font>
+                        <Font name="System Bold" size="13.0" />
+                    </font>
+                </Label>
+                <Label layoutX="800.0" layoutY="30.0" text="Wind speed:" textFill="#302256">
+                    <font>
+                        <Font name="System Bold" size="13.0" />
+                    </font>
+                </Label>
+                <Label layoutX="800.0" layoutY="70.0" text="Cloudiness:" textFill="#302256">
+                    <font>
+                        <Font name="System Bold" size="13.0" />
+                    </font>
+                </Label>
+                <Label layoutX="800.0" layoutY="110.0" text="Pressure:" textFill="#302256">
+                    <font>
+                        <Font name="System Bold" size="13.0" />
+                    </font>
+                </Label>
+                <Label layoutX="800.0" layoutY="150.0" text="Humidity:" textFill="#302256">
+                    <font>
+                        <Font name="System Bold" size="13.0" />
+                    </font>
+                </Label>
+                <Label fx:id="windSpeedOne" layoutX="400.0" layoutY="30.0" text="m/s" textFill="#302256">
+                    <font>
+                        <Font name="System Bold" size="13.0" />
+                    </font>
+                </Label>
+                <Label fx:id="cloudinessOne" layoutX="400.0" layoutY="70.0" text="\%" textFill="#302256">
+                    <font>
+                        <Font name="System Bold" size="13.0" />
+                    </font>
+                </Label>
+                <Label fx:id="pressureOne" layoutX="400.0" layoutY="110.0" text="hpa" textFill="#302256">
+                    <font>
+                        <Font name="System Bold" size="13.0" />
+                    </font>
+                </Label>
+                <Label fx:id="humidityOne" layoutX="400.0" layoutY="150.0" text="\%" textFill="#302256">
+                    <font>
+                        <Font name="System Bold" size="13.0" />
+                    </font>
+                </Label>
+                <Label fx:id="windSpeedTwo" layoutX="900.0" layoutY="30.0" text="m/s" textFill="#302256">
+                    <font>
+                        <Font name="System Bold" size="13.0" />
+                    </font>
+                </Label>
+                <Label fx:id="cloudinessTwo" layoutX="900.0" layoutY="70.0" text="\%" textFill="#302256">
+                    <font>
+                        <Font name="System Bold" size="13.0" />
+                    </font>
+                </Label>
+                <Label fx:id="pressureTwo" layoutX="900.0" layoutY="110.0" text="hpa" textFill="#302256">
+                    <font>
+                        <Font name="System Bold" size="13.0" />
+                    </font>
+                </Label>
+                <Label fx:id="humidityTwo" layoutX="900.0" layoutY="150.0" text="\%" textFill="#302256">
+                    <font>
+                        <Font name="System Bold" size="13.0" />
+                    </font>
+                </Label>
+                <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="167.0" layoutY="270.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@img/LineShort.png" />
+                    </image>
+                </ImageView>
+                <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="335.0" layoutY="270.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@img/LineShort.png" />
+                    </image>
+                </ImageView>
+                <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="667.0" layoutY="270.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@img/LineShort.png" />
+                    </image>
+                </ImageView>
+                <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="834.0" layoutY="270.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@img/LineShort.png" />
+                    </image>
+                </ImageView>
+                <ImageView fx:id="img11" fitHeight="120.0" fitWidth="120.0" layoutX="25.0" layoutY="300.0" pickOnBounds="true" preserveRatio="true" />
+                <Label fx:id="temp11" alignment="CENTER" layoutX="50.0" layoutY="430.0" prefWidth="70.0" text="temp11" textFill="#28758e">
+                    <font>
+                        <Font name="System Bold" size="17.0" />
+                    </font>
+                </Label>
+                <Label fx:id="temp12" alignment="CENTER" layoutX="220.0" layoutY="430.0" prefWidth="70.0" text="temp12" textFill="#28758e">
+                    <font>
+                        <Font name="System Bold" size="17.0" />
+                    </font>
+                </Label>
+                <ImageView fx:id="img12" fitHeight="120.0" fitWidth="120.0" layoutX="190.0" layoutY="300.0" pickOnBounds="true" preserveRatio="true" />
+                <ImageView fx:id="img13" fitHeight="120.0" fitWidth="120.0" layoutX="360.0" layoutY="300.0" pickOnBounds="true" preserveRatio="true" />
+                <Label fx:id="temp13" alignment="CENTER" layoutX="380.0" layoutY="430.0" prefWidth="70.0" text="temp13" textFill="#28758e">
+                    <font>
+                        <Font name="System Bold" size="17.0" />
+                    </font>
+                </Label>
+                <ImageView fx:id="img21" fitHeight="120.0" fitWidth="120.0" layoutX="525.0" layoutY="300.0" pickOnBounds="true" preserveRatio="true" />
+                <Label fx:id="temp21" alignment="CENTER" layoutX="550.0" layoutY="430.0" prefWidth="70.0" text="temp21" textFill="#28758e">
+                    <font>
+                        <Font name="System Bold" size="17.0" />
+                    </font>
+                </Label>
+                <ImageView fx:id="img22" fitHeight="120.0" fitWidth="120.0" layoutX="695.0" layoutY="300.0" pickOnBounds="true" preserveRatio="true" />
+                <Label fx:id="temp22" alignment="CENTER" layoutX="720.0" layoutY="430.0" prefWidth="70.0" text="temp22" textFill="#28758e">
+                    <font>
+                        <Font name="System Bold" size="17.0" />
+                    </font>
+                </Label>
+                <ImageView fx:id="img23" fitHeight="120.0" fitWidth="120.0" layoutX="860.0" layoutY="300.0" pickOnBounds="true" preserveRatio="true" />
+                <Label fx:id="temp23" alignment="CENTER" layoutX="890.0" layoutY="430.0" prefWidth="70.0" text="temp23" textFill="#28758e">
+                    <font>
+                        <Font name="System Bold" size="17.0" />
+                    </font>
+                </Label>
+                <Label fx:id="desc1" alignment="CENTER" layoutX="10.0" layoutY="230.0" prefHeight="30.0" prefWidth="250.0" text="Desc1" textFill="#28758e">
+                    <font>
+                        <Font name="System Bold" size="14.0" />
+                    </font>
+                </Label>
+                <Label fx:id="desc2" alignment="CENTER" layoutX="510.0" layoutY="230.0" prefHeight="30.0" prefWidth="250.0" text="Desc2" textFill="#28758e">
+                    <font>
+                        <Font name="System Bold" size="14.0" />
+                    </font>
+                </Label>
+                <Label fx:id="day11" alignment="CENTER" layoutX="35.0" layoutY="270.0" prefWidth="100.0" text="day11" textAlignment="CENTER" textFill="#1d4753">
+                    <font>
+                        <Font name="System Bold" size="12.0" />
+                    </font>
+                </Label>
+                <Label fx:id="day12" alignment="CENTER" layoutX="205.0" layoutY="270.0" prefWidth="100.0" text="day12" textAlignment="CENTER" textFill="#1d4753">
+                    <font>
+                        <Font name="System Bold" size="12.0" />
+                    </font>
+                </Label>
+                <Label fx:id="day13" alignment="CENTER" layoutX="360.0" layoutY="270.0" prefWidth="100.0" text="day13" textAlignment="CENTER" textFill="#1d4753">
+                    <font>
+                        <Font name="System Bold" size="12.0" />
+                    </font>
+                </Label>
+                <Label fx:id="day21" alignment="CENTER" layoutX="540.0" layoutY="270.0" prefWidth="100.0" text="day21" textAlignment="CENTER" textFill="#1d4753">
+                    <font>
+                        <Font name="System Bold" size="12.0" />
+                    </font>
+                </Label>
+                <Label fx:id="day22" alignment="CENTER" layoutX="705.0" layoutY="270.0" prefWidth="100.0" text="day22" textAlignment="CENTER" textFill="#1d4753">
+                    <font>
+                        <Font name="System Bold" size="12.0" />
+                    </font>
+                </Label>
+                <Label fx:id="day23" alignment="CENTER" layoutX="860.0" layoutY="270.0" prefWidth="100.0" text="day23" textAlignment="CENTER" textFill="#1d4753">
+                    <font>
+                        <Font name="System Bold" size="12.0" />
+                    </font>
+                </Label>
+            </children></Pane>
+        <Pane fx:id="searchWindow" layoutY="600.0" prefHeight="100.0" prefWidth="1000.0">
+            <children>
+                <Button fx:id="checkButton" layoutX="370.0" layoutY="60.0" mnemonicParsing="false" onAction="#buttonAction" prefHeight="25.0" prefWidth="100.0" text="Check" />
+                <Button fx:id="findButton" layoutX="475.0" layoutY="60.0" mnemonicParsing="false" onAction="#buttonAction" prefWidth="50.0" text="Find" />
+                <Button fx:id="cancelButton" layoutX="530.0" layoutY="60.0" mnemonicParsing="false" onAction="#buttonAction" prefHeight="25.0" prefWidth="100.0" text="Cancel" />
+                <TextField fx:id="cityOneInput" alignment="CENTER" layoutX="100.0" layoutY="15.0" prefHeight="30.0" prefWidth="250.0" promptText="city from">
+                    <font>
+                        <Font name="System Bold" size="14.0" />
+                    </font>
+                </TextField>
+                <TextField fx:id="cityTwoInput" alignment="CENTER" layoutX="650.0" layoutY="15.0" prefHeight="30.0" prefWidth="250.0" promptText="city to">
+                    <font>
+                        <Font name="System Bold" size="14.0" />
+                    </font>
+                </TextField>
+                <Label fx:id="errors" alignment="CENTER" contentDisplay="CENTER" layoutX="350.0" layoutY="15.0" prefHeight="30.0" prefWidth="300.0" text="No location found. Try again" textAlignment="CENTER" textFill="#c71414">
+                    <font>
+                        <Font name="System Bold" size="13.0" />
+                    </font>
+                </Label>
+            </children></Pane>
+    </children>
+</AnchorPane>
