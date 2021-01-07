@@ -145,7 +145,6 @@ public class WeatherManager {
         jsonData1=json.getJSONArray("list").getJSONObject(8).getJSONArray("weather").getJSONObject(0);
         this.img11=jsonData1.get("icon").toString();
 
-
         jsonData2 =json.getJSONArray("list").getJSONObject(16).getJSONObject("main");
         this.temp12=jsonData2.getInt("temp");
         jsonData2=json.getJSONArray("list").getJSONObject(16).getJSONArray("weather").getJSONObject(0);

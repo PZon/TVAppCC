@@ -357,5 +357,4 @@ public class MainWindowController implements Initializable {
         return simpleDateFormat.format(calendar.getTime());
     }
 
-
 }
